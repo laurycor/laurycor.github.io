@@ -1,0 +1,20 @@
+# ============================================================
+# content/example_student.yaml
+# ============================================================
+# This is an example student profile. Copy this file to
+# something like content/my_profile.yaml, fill in your own
+# information, and update portfolio_config.yaml to point to it.
+# ============================================================
+
+name: "Corei Laury"
+tagline: "Aspiring Data Scientist | MSU CMSE Student | Python • SQL • Data Visualization"
+
+about: |
+  Computational Mathematics, Science & Engineering student at Michigan State University interested 
+  in data science, analytics, and visualization. I enjoy using Python, SQL, and statistical tools 
+  to analyze real-world datasets and communicate insights through clear visualizations.
+
+# Contact information — remove any fields you prefer not to share
+email: "laurycor@msu.edu"
+linkedin: " "
+github: "https://github.com/laurycor"

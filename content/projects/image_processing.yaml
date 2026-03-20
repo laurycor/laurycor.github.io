@@ -1,0 +1,34 @@
+title: "Image Processing and Transformation"
+
+short_summary: >
+  Applied image processing techniques including cropping, rotation,
+  filtering, and color channel manipulation using Python to explore how
+  transformations affect image structure and visual output.
+
+tech_stack:
+  - Python
+  - NumPy
+  - Matplotlib
+  - Pillow
+  - SciPy
+
+problem_statement: >
+  Understanding how images are represented and manipulated digitally is
+  essential for many applications such as computer vision and data
+  analysis. This project explores how different transformations impact
+  visual data.
+
+approach: >
+  Loaded and processed images using Python libraries. Applied operations
+  such as cropping, rotating, flipping, and filtering. Analyzed RGB color
+  channels and modified pixel values to observe how changes affect the
+  final image output.
+
+results_impact: >
+  Demonstrated how different image transformations alter visual data and
+  highlighted the importance of preprocessing in image-based analysis.
+  Produced multiple visual outputs showing the effects of each operation.
+
+repo_url: "https://github.com/laurycor/your-repo"
+notebook_url: ""
+image_path: "img/image_processing.png"
