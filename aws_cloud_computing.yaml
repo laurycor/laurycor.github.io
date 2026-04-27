@@ -1,0 +1,9 @@
+title: AWS Cloud Computing Project (NYC 311)
+
+description: >
+  This project demonstrates a cloud-based data pipeline using AWS services. 
+  Data was stored in S3, queried using Athena, and used to build a modeling dataset in SageMaker.
+
+tech: AWS S3, Athena, SageMaker, SQL
+
+github: https://github.com/laurycor/aws-nyc311-laurycor
