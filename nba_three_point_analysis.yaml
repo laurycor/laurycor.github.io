@@ -1,0 +1,11 @@
+title: NBA Three-Point Analysis
+
+description: >
+  This project explores how three-point shooting impacts winning in the NBA from 2000 to 2023. 
+  The analysis shows that shooting efficiency is a stronger predictor of success than shot volume.
+
+tech: Tableau, Data Visualization
+
+image: static/img/nba.png
+
+github: https://github.com/laurycor
