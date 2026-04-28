@@ -1,106 +1,98 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corei Laury | Data Science Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1 {
+      color: #18453B;
+    }
+    h2 {
+      border-bottom: 2px solid #18453B;
+      padding-bottom: 5px;
+    }
+    .project {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    a {
+      color: #18453B;
+      font-weight: bold;
+    }
+  </style>
+</head>
 
-{% block content %}
+<body>
+  <h1>Corei Laury</h1>
+  <h3>Data Science Student | Michigan State University</h3>
 
-<!-- ===== About section ===== -->
-<section id="about" class="section about-section">
-  <h2>About Me</h2>
-  <div class="about-text">{{ student.about | safe }}</div>
-</section>
+  <p>
+    I am a data science student with experience in data analysis, visualization,
+    and cloud computing. My work focuses on using data to understand trends,
+    communicate insights, and support decision-making.
+  </p>
 
-<!-- ===== Projects section ===== -->
-<section id="projects" class="section projects-section">
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
 
-  <div class="project-grid">
-    {% for project in projects %}
-    <article class="project-card">
-
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="{{ project.image_path }}"
-          alt="Thumbnail for {{ project.title }}"
-          class="project-image"
-        />
-      </div>
-
-      <div class="project-body">
-        <h3 class="project-title">{{ project.title }}</h3>
-
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">{{ project.short_summary }}</p>
-
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          {% for tech in project.tech_stack %}
-          <span class="tech-badge">{{ tech }}</span>
-          {% endfor %}
-        </div>
-
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>{{ project.problem_statement }}</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>{{ project.approach }}</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>{{ project.results_impact }}</p>
-          </div>
-        </details>
-
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          {% if project.repo_url %}
-          <a href="{{ project.repo_url }}" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          {% endif %}
-          {% if project.notebook_url %}
-          <a href="{{ project.notebook_url }}" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          {% endif %}
-        </div>
-      </div>
-
-    </article>
-    {% endfor %}
+  <div class="project">
+    <h3>NBA Three-Point Analysis</h3>
+    <p>
+      This Tableau dashboard explores how three-point shooting relates to winning
+      in the NBA from 2000 to 2023. The analysis shows that shooting efficiency
+      is a stronger predictor of success than shot volume.
+    </p>
+    <p><strong>Tools:</strong> Tableau, Data Visualization</p>
+    <img src="static/img/nba.png" alt="NBA Three-Point Analysis Dashboard">
   </div>
-</section>
 
-<!-- ===== Contact section ===== -->
-<section id="contact" class="section contact-section">
-  <h2>Contact</h2>
-  <ul class="contact-list">
-    {% if student.email %}
-    <li>
-      <span class="contact-label">Email:</span>
-      <a href="mailto:{{ student.email }}">{{ student.email }}</a>
-    </li>
-    {% endif %}
-    {% if student.linkedin %}
-    <li>
-      <span class="contact-label">LinkedIn:</span>
-      <a href="{{ student.linkedin }}" target="_blank" rel="noopener">{{ student.linkedin }}</a>
-    </li>
-    {% endif %}
-    {% if student.github %}
-    <li>
-      <span class="contact-label">GitHub:</span>
-      <a href="{{ student.github }}" target="_blank" rel="noopener">{{ student.github }}</a>
-    </li>
-    {% endif %}
-  </ul>
-</section>
+  <div class="project">
+    <h3>AWS Cloud Computing Project (NYC 311 Data)</h3>
+    <p>
+      This project demonstrates a cloud-based data workflow using Amazon S3,
+      AWS Athena, and SageMaker to analyze NYC 311 complaint data and create
+      a modeling dataset.
+    </p>
+    <p><strong>Tools:</strong> AWS S3, Athena, SageMaker, SQL</p>
+    <p>
+      <a href="https://github.com/laurycor/aws-nyc311-laurycor">View Repository</a>
+    </p>
+  </div>
 
-{% endblock %}
+  <div class="project">
+    <h3>Data Analysis Project (HW2)</h3>
+    <p>
+      This project focuses on exploratory data analysis using Python to clean,
+      analyze, and visualize data.
+    </p>
+    <p><strong>Tools:</strong> Python, pandas, matplotlib</p>
+    <p>
+      <a href="https://github.com/laurycor/cmse492-hw02-laurycor">View Repository</a>
+    </p>
+  </div>
+
+  <h2>Skills</h2>
+  <p>
+    Python, pandas, matplotlib, SQL, Tableau, AWS S3, AWS Athena, AWS SageMaker,
+    Git, and GitHub.
+  </p>
+
+  <h2>GitHub</h2>
+  <p>
+    <a href="https://github.com/laurycor">View my GitHub Profile</a>
+  </p>
+</body>
+</html>
