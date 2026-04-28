@@ -19,7 +19,7 @@ A professional data science portfolio showcasing projects in data analysis, visu
 A Tableau dashboard exploring how three-point shooting relates to winning in the NBA from 2000 to 2023.  
 The analysis shows that shooting efficiency is a stronger predictor of success than shot volume.
 
-🔗 https://laurycor.github.io
+
 
 ---
 
